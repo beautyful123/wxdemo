@@ -1,0 +1,4 @@
+/* components/navbar.wxss */
+.fl_l{
+  float: left;
+}

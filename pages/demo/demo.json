@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "children": "/pages/children/demo",
+    "child": "./child/child",
+    "navbar": "../../components/navbar"
+  }
+}

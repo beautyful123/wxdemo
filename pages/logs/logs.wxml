@@ -1,0 +1,8 @@
+<!--logs.wxml-->
+<navbar title="日志信息"></navbar>
+<view class="container log-list">
+<text>于立伟真帅</text>
+  <block wx:for="{{logs}}" wx:for-item="log">
+    <text class="log-item">{{index + 1}}. {{log}}</text>
+  </block>
+</view>

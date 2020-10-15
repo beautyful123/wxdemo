@@ -1,0 +1,10 @@
+<view>
+  <button bindtap="handleSend">发送ajax请求</button>
+  <text>child组件</text><text>{{age}}岁</text>
+  <button type="sccess" plain="true" bindtap="toFather">父传值</button>
+  <text>双向绑定</text>
+  <!-- <input type="text" model:value="{{count}}"/> -->
+  <button bindtap="changeCount">changeCount</button>
+  <text>双向绑定end</text><text>---{{count}}</text>
+<button bindtap="login">login</button>
+</view>

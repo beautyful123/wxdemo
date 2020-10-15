@@ -1,0 +1,14 @@
+<navigator open-type="switchTab" url="/pages/demo/demo">返回</navigator>
+<view>
+  <view>
+    <image mode="widthFix" style="width: 100%" src='data:image/png;base64,{{src2}}'></image>
+  </view>
+  <button bindtap="getImage">点击获取二维码</button>
+  <text>我是children组件</text>
+  <text>父组件传值—————————— {{vname}}</text>
+</view>
+
+<button bindtap="openLocation">open地图</button>
+<view>
+  <!-- <map style="width:100vw;height:100vh" scale="10" name="" longitude="108" latitude="34" show-location markers="{{[{id: 1,longitude: 108,latitude: 34,name: 123, title:'于立伟真帅' }]}}"></map> -->
+</view>

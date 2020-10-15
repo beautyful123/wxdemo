@@ -1,0 +1,29 @@
+<view>
+  <navbar title="{{'阿里巴巴'}}"></navbar>
+<picker-view indicator-style="border-top:1px solid blue" value="{{value}}" style="width: 100%; height: 300rpx;padding-left:50rpx" bindchange="changePicker">
+    <picker-view-column>
+      <view>+</view>
+      <view>-</view>
+    </picker-view-column>
+    <picker-view-column>
+      <view wx:for="{{[1,2,3,4,5]}}" wx:key="*this">{{item}}</view>
+    </picker-view-column>
+    <picker-view-column>
+      <view wx:for="{{[11,22,33,44,55]}}" wx:key="*this">{{item}}</view>
+    </picker-view-column>
+  </picker-view>
+  <view>
+    <text>{{cvalue[0]}}</text>
+    <text>{{cvalue[1]}}</text>
+    <text>{{cvalue[2]}}</text>
+  </view>
+  <input type="text" data-name="name" value="{{name}}" bindinput="inputChange"/>
+  <text>{{name}}</text>
+  <button type="default" bindtap="changeText">clickMe</button>
+  <children vname="name"></children>
+  <view>父组件得count值{{count}}</view>
+  <child id="d1" age="{{age}}" model:count="{{count}}" bindmyEvent="getChildData"></child>
+  <button>
+    <navigator open-type="reLaunch" url="/pages/children/demo">跳转</navigator>
+  </button>
+</view>
