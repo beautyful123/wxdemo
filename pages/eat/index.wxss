@@ -1,0 +1,12 @@
+/* pages/eat/index.wxss */
+.custom{
+  position: fixed;
+  top: 200rpx;
+  left: 0;
+  width: 100vw;
+  height: 30rpx;
+  font-size: 30rpx;
+  text-align: center;
+  opacity: .5;
+  z-index: 10;
+}

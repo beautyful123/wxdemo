@@ -100,10 +100,10 @@ Page({
     var that = this
     wx.request({
       //注意：下面的access_token值可以不可以直接复制使用，需要自己请求获取
-      url: 'https://api.weixin.qq.com/wxa/getwxacodeunlimit?access_token=38_r6mMNh-qhmo02GNj1XrLl2Eq_VEG9BuYPM4XfgtZWEkIbzZ_0qAFT-j1vrq1rejKsspkY5Y1Nr_VDje14CTcuaM3vBDpi9L1UmuReZTWFme-zB8QRIFFNipBmCNNdT6V656-gXmDr3l4Wh4pKVScADADOL',
+      url: 'https://api.weixin.qq.com/wxa/getwxacodeunlimit?access_token=38_G_nWrE4O5BTSxQd8o7VlxJormni5mSCUbk5LiuBkdLDLH_6QzXA-NNZpeMrbqF5QA6SCqvEdQvyfxFlDkVVQ_dCafZ8L2Wdor0u61YCiymQ7EGYhI4NCiDJKMmzvar0Cv1M9mUvzoTlFK0j8TGUaACANAO',
       data: {
         scene: '000',
-        page: ""  //这里按照需求设置值和参数   
+        page: "pages/beauty"  //这里按照需求设置值和参数   
       },
       method: "POST",
       responseType: 'arraybuffer',  //设置响应类型
@@ -112,7 +112,8 @@ Page({
         that.setData({
           src2
         })
-
+        console.log(src2)
+        console.log("二维码下载成功")
         // let fileManager = wx.getFileSystemManager();//获取文件管理器
         // let filePath = wx.env.USER_DATA_PATH + '/inner.jpg';//设置临时路径
         // fileManager.writeFile({//获取到的数据写入临时路径

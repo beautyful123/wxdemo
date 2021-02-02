@@ -1,5 +1,73 @@
-<view>
   <navbar title="{{'阿里巴巴'}}"></navbar>
+<view>
+  <button wx:if="{{!tt}}" bindtap="toggleArea">点我</button>
+  <textarea bindinput="inputchange" wx:if="{{tt}}" auto-focus="true" name="" id="" cols="30" rows="10" style="color:red;font-size:40rpx;font-weight:bold;background:blue" value="傻逼，我是沙巴"></textarea>
+<view>{{dateF}}</view>
+<button bindtap="goToEat">点击查看今天吃什么</button>
+<button bindtap="saveImage">点击按钮保存图片到本地</button>
+<button bindtap="drawer">点击花花</button>
+<button bindtap="createImage">点击生成图片</button>
+<image wx:if="{{radarImg}}" src="{{radarImg}}"></image>
+<canvas style='width:300px;height:150px' canvas-id="asd"></canvas>
+<canvas canvas-id="canvas" style="width: 100vw; height: calc(100vw / 750 * 1080);"></canvas>
+<movable-area style="width:100vw;height:200rpx;overflow:hidden;background:red;margin-bottom:2rpx" wx:for="{{list}}" wx:key="index">
+  <movable-view style="width:calc(100vw + 200rpx);height:100%;position:relative" damping="200" direction="horizontal" x="{{item.x}}" y="{{y}}" bindtouchstart="bindtouchstart" bindtouchend="bindtouchend" htouchmove="htouchmove" data-key="{{index}}">
+    <view style="width:100vw;height:100%;background:blue;position:absolute;top:0;left:0"></view>
+    <view style="width:200rpx;height:100%;background:red;position:absolute;top:0;right:0">删除</view>
+  </movable-view>
+</movable-area>
+
+  <button bindtap="handleSend">先授权</button>
+  <button bindtap="test">于立伟接口方式（不可用）</button>
+  <button bindtap="mn">模拟后台给我发消息1</button>
+  <view>
+    <text>获取权限下发消息</text>
+  </view>
+  <button bindtap="dq">设置</button>
+  <button bindtap="handleSend2">第二个</button>
+  <button bindtap="mn2">模拟后台给我发消息1</button>
+  <view>
+    <!-- report-submit 给出formid -->
+    <!-- bindreset表单重置事件 -->
+    <form action="" report-submit="true" report-submit-timeout="5000" bindsubmit="handleSubmit" bindreset="handleReset">
+      <view class="page-section page-section-gap">
+        <view class="page-section-title">radio</view>
+        <radio-group name="radio">
+          <label><radio value="radio1"/>选项一</label>
+          <label><radio value="radio2"/>选项二</label>
+        </radio-group>
+      </view>
+
+      <view class="page-section page-section-gap">
+        <view class="page-section-title">checkbox</view>
+        <checkbox-group name="checkbox">
+          <label><checkbox value="checkbox1"/>选项一</label>
+          <label><checkbox value="checkbox2"/>选项二</label>
+        </checkbox-group>
+      </view>
+
+      <view class="page-section page-section-gap">
+        <view class="page-section-title">slider</view>
+        <slider value="50" name="slider" show-value ></slider>
+      </view>
+
+      <view class="page-section">
+        <view class="page-section-title">input</view>
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__bd" style="margin: 30rpx 0" >
+              <input class="weui-input" name="input" placeholder="这是一个输入框" />
+            </view>
+          </view>
+        </view>
+      </view>
+
+      <view class="btn-area">
+        <button style="margin: 30rpx 0" type="primary" formType="submit">Submit</button>
+        <button style="margin: 30rpx 0" formType="reset">Reset</button>
+      </view>
+    </form>
+  </view>
 <picker-view indicator-style="border-top:1px solid blue" value="{{value}}" style="width: 100%; height: 300rpx;padding-left:50rpx" bindchange="changePicker">
     <picker-view-column>
       <view>+</view>

@@ -3,7 +3,11 @@
     "pages/demo/demo",
     "pages/index/index",
     "pages/logs/logs",
-    "pages/children/demo"
+    "pages/children/demo",
+    "pages/beauty",
+    "pages/beauty/index",
+    "pages/webview/index",
+    "pages/eat/index"
   ],
   "window": {
     "navigationBarBackgroundColor": "#ccc",
@@ -14,11 +18,11 @@
   },
   "permission": {
     "scope.userLocation": {
-      "desc":"你的位置信息将被于立伟记住顺着网线找上门去"
+      "desc": "你的位置信息将被于立伟记住顺着网线找上门去"
     }
   },
   "tabBar": {
-    "color": "#9A9B9C",	
+    "color": "#9A9B9C",
     "selectedColor": "#fff",
     "backgroundColor": "#543212",
     "borderStyle": "white",

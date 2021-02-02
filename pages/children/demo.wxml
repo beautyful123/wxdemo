@@ -1,4 +1,8 @@
-<navigator open-type="switchTab" url="/pages/demo/demo">返回</navigator>
+<button style="margin-top:100rpx">
+  <navigator open-type="switchTab" url="/pages/demo/demo">返回</navigator>
+</button>
+<button loading="true" type="warn" open-type="contact">微信开放能力</button>
+<navigator url="/pages/webview/index">跳转webview</navigator>
 <view>
   <view>
     <image mode="widthFix" style="width: 100%" src='data:image/png;base64,{{src2}}'></image>

@@ -33,6 +33,15 @@ App({
       }
     })
   },
+  onShow() {
+    console.log("于立伟真帅")
+    wx.getSetting({
+      withSubscriptions: true,
+      success(res) {
+        console.log(res)
+      }
+    })
+  },
   globalData: {
     userInfo: null
   }
