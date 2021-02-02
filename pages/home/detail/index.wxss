@@ -1,1 +1,4 @@
 /* pages/home/detail/index.wxss */
+.back{
+  background: #f1f1f1;
+}
