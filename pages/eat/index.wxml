@@ -1,5 +1,5 @@
-<!-- <web-view src="http://guozhivip.com/eat/"></web-view> -->
-<web-view src="http://m.baidu.com"></web-view>
+<web-view src="http://guozhivip.com/eat/"></web-view>
+<!-- <web-view src="http://m.baidu.com"></web-view> -->
 https://m.baidu.com
 ### webview组件只能单独存在，定位的组件也会被覆盖
 <view class="custom">

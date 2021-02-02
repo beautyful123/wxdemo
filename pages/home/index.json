@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "search": "./components/search/search",
+    "items": "./components/item/items"
+  },
+  "navigationBarTitleText": "秦媛丽影视"
+}

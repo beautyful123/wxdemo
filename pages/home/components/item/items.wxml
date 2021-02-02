@@ -1,0 +1,5 @@
+<view class="item" bindtap="goToDetail">
+  <image src="{{msg.imgUrl}}"></image>
+  <view class="title">{{msg.title}}</view>
+  <view class="size">{{msg.size}}集</view>
+</view>

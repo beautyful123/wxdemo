@@ -1,0 +1,39 @@
+/* pages/home/components/item/items.wxss */
+.item{
+  position: relative;
+  width: 230rpx;
+  height: 346rpx;
+  border-radius: 20rpx;
+  background: burlywood;
+  overflow: hidden;
+  margin-bottom: 10rpx;
+}
+.item>image{
+  width: 100%;
+  height: 100%;
+}
+.title{
+  width: 100%;
+  height: 60rpx;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,.5);
+  color: #fff;
+  line-height: 60rpx;
+  text-align: center;
+}
+.size{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 80rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  background: #439231;
+  border-top-right-radius: 20rpx;
+  border-bottom-left-radius: 20rpx;
+  text-align: center;
+  color: #fff;
+  font-size: 25rpx;
+}

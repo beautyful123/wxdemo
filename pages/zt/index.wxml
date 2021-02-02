@@ -1,0 +1,7 @@
+<view class="kfz">
+  敬请期待...
+</view>
+<view style="position:fixed;top:0;left:0;z-index:2">
+  <navigator style="width:100vw;height:100rpx;line-height:100rpx;text-align:center;font-size:50rpx;" url="/pages/demo/demo">demo.js</navigator>
+  <navigator style="width:100vw;height:100rpx;line-height:100rpx;text-align:center;font-size:50rpx;" url="/pages/eat/index">今天吃啥呀</navigator>
+</view>

@@ -1,0 +1,30 @@
+/* pages/home/index.wxss */
+
+.list_item{
+  float:left;
+  width:25%;
+  text-align: center;
+  line-height: 90rpx;
+}
+.bor{
+  border-bottom: 1rpx solid #6ecdc7;
+}
+.zanwu{
+  position: fixed;
+  top: 90rpx;
+  left: 0;
+  width:100%;
+  height: calc(100vh - 90rpx);
+  line-height: calc(100vh - 90rpx);
+  text-align: center;
+  font-size: 50rpx;
+  color: #6ecdc7;
+  z-index: 1;
+}
+.items{
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}

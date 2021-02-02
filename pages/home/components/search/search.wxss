@@ -1,0 +1,12 @@
+/* pages/home/search/search.wxss */
+.search{
+  margin: 15rpx 50rpx;
+  height: 70rpx;
+  width: calc(100% - 100rpx);
+  box-sizing: border-box;
+  line-height: 70rpx;
+  border-radius: 35rpx;
+  background: #6ecdc7;
+  text-align: center;
+  color: #fff;
+}

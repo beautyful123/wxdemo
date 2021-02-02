@@ -6,8 +6,8 @@
     <icon type="info" size="33"></icon>
   </view> -->
   <view style="position:relative;width:200rpx;height:70rpx" class="fl_l" bindtap="backone">
-    <image class="fl_l" style="transform: scale(0.2);position:absolute;left:-280rpx;top:-220rpx" src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2802144128,2530753695&fm=26&gp=0.jpg"></image>
+    <image class="fl_l" style="transform: scale(0.2);position:absolute;left:-0;top:-10rpx;transform-origin:top left" src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2802144128,2530753695&fm=26&gp=0.jpg"></image>
   </view>
-  <view style="text-align:center;margin: 0 100px 0 80px;line-height:66rpx"><text>{{title}}</text></view>
+  <view style="text-align:center;margin: 0 100px 0 80px;line-height:80rpx"><text>{{title}}</text></view>
   <view style="height:0;clear:both"></view>
 </view>
