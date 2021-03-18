@@ -1,5 +1,7 @@
-  <navbar title="{{'阿里巴巴'}}"></navbar>
+  <navbar title="{{'于里帅帅'}}"></navbar>
+  <!-- <navbar title="{{'阿里巴巴'}}"></navbar> -->
 <view>
+  <button bindtap="openScanCode">scanCode</button>
   <button wx:if="{{!tt}}" bindtap="toggleArea">点我</button>
   <textarea bindinput="inputchange" wx:if="{{tt}}" auto-focus="true" name="" id="" cols="30" rows="10" style="color:red;font-size:40rpx;font-weight:bold;background:blue" value="傻逼，我是沙巴"></textarea>
 <view>{{dateF}}</view>

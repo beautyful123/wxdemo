@@ -175,6 +175,15 @@ Page({
     //     },1000)
     //   })
   },
+  openScanCode() {
+    wx.scanCode({
+      success(res) {
+        console.log('success');
+        console.log(res)
+        console.log(wx.base64ToArrayBuffer(res.rawData))
+      }
+    })
+  },
   createImages() {
     setTimeout(function() {
       wx.canvasToTempFilePath({

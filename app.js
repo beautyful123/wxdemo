@@ -35,6 +35,9 @@ App({
   },
   onShow() {
     console.log("于立伟真帅")
+    let a = {}
+    let b = a?.c
+    console.log(b)
     wx.getSetting({
       withSubscriptions: true,
       success(res) {
