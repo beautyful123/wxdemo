@@ -12,7 +12,8 @@
     "pages/home/detail/index",
     "pages/search/index",
     "pages/zt/index",
-    "pages/lsjl/lsju"
+    "pages/lsjl/lsju",
+    "custom-tab-bar/index"
   ],
   "window": {
     "navigationBarBackgroundColor": "#6ecdc7",
@@ -30,6 +31,7 @@
     "selectedColor": "#6ecdc7",
     "backgroundColor": "#fff",
     "borderStyle": "white",
+    "custom": true,
     "list": [
       {
         "pagePath": "pages/home/index",
@@ -51,6 +53,13 @@
       }
     ]
   },
-  "style": "v2",
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index",
+    "van-row": "@vant/weapp/row/index",
+    "van-col": "@vant/weapp/col/index",
+    "van-tag": "@vant/weapp/tag/index",
+    "van-tabbar": "@vant/weapp/tabbar/index",
+    "van-tabbar-item": "@vant/weapp/tabbar-item/index"
+  },
   "sitemapLocation": "sitemap.json"
 }

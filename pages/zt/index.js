@@ -7,6 +7,13 @@ Page({
   data: {
 
   },
+  custonJump(e) {
+    console.log(e.target)
+    let {url} = e.target.dataset;
+    wx.navigateTo({
+      url
+    })
+  },
 
   /**
    * 生命周期函数--监听页面加载

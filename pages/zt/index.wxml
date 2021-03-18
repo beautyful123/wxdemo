@@ -1,20 +1,70 @@
 <view class="kfz">
   敬请期待...
 </view>
-<view style="position:fixed;top:0;left:0;z-index:2">
-  <navigator style="float:left;margin:5rpx 10rpx;border-radius:20rpx;border:1rpx solid red;height:100rpx;line-height:100rpx;text-align:center;font-size:40rpx;" url="/pages/demo/demo">demo.js</navigator>
-  <navigator style="float:left;margin:5rpx 10rpx;border-radius:20rpx;border:1rpx solid red;height:100rpx;line-height:100rpx;text-align:center;font-size:40rpx;" url="/pages/eat/index?src=http://guozhivip.com/eat/">今天吃啥呀</navigator>
-  <navigator style="float:left;margin:5rpx 10rpx;border-radius:20rpx;border:1rpx solid red;height:100rpx;line-height:100rpx;text-align:center;font-size:40rpx;" url="/pages/eat/index?src=https://www.zxgj.cn/g/zhougongjiemeng">周公解梦</navigator>
-  <navigator style="float:left;margin:5rpx 10rpx;border-radius:20rpx;border:1rpx solid red;height:100rpx;line-height:100rpx;text-align:center;font-size:40rpx;" url="/pages/eat/index?src=http://www.jsons.cn/agility/">反应测试</navigator>
-  <navigator style="float:left;margin:5rpx 10rpx;border-radius:20rpx;border:1rpx solid red;height:100rpx;line-height:100rpx;text-align:center;font-size:40rpx;" url="/pages/eat/index?src=https://www.ip138.com/sanwei/">女性标准三围自测</navigator>
-  <navigator style="float:left;margin:5rpx 10rpx;border-radius:20rpx;border:1rpx solid red;height:100rpx;line-height:100rpx;text-align:center;font-size:40rpx;" url="/pages/eat/index?src=https://www.52doutu.cn/">斗图</navigator>
-  <navigator style="float:left;margin:5rpx 10rpx;border-radius:20rpx;border:1rpx solid red;height:100rpx;line-height:100rpx;text-align:center;font-size:40rpx;" url="/pages/eat/index?src=https://cli.im/">二维码生成</navigator>
-  <navigator style="float:left;margin:5rpx 10rpx;border-radius:20rpx;border:1rpx solid red;height:100rpx;line-height:100rpx;text-align:center;font-size:40rpx;" url="/pages/eat/index?src=http://guozhivip.com/mvs.html">追剧网址</navigator>
-  <navigator style="float:left;margin:5rpx 10rpx;border-radius:20rpx;border:1rpx solid red;height:100rpx;line-height:100rpx;text-align:center;font-size:40rpx;" url="/pages/eat/index?src=http://guozhivip.com/lab/">有点意思</navigator>
-  <navigator style="float:left;margin:5rpx 10rpx;border-radius:20rpx;border:1rpx solid red;height:100rpx;line-height:100rpx;text-align:center;font-size:40rpx;" url="/pages/eat/index?src=https://fm.douban.com/">一首歌的时间</navigator> 
-  <navigator style="float:left;margin:5rpx 10rpx;border-radius:20rpx;border:1rpx solid red;height:100rpx;line-height:100rpx;text-align:center;font-size:40rpx;" url="/pages/eat/index?src=https://www.yikm.net/">小霸王</navigator>
-  <navigator style="float:left;margin:5rpx 10rpx;border-radius:20rpx;border:1rpx solid red;height:100rpx;line-height:100rpx;text-align:center;font-size:40rpx;" url="/pages/eat/index?src=https://www.allhistory.com/">全历史</navigator>
-  <navigator style="float:left;margin:5rpx 10rpx;border-radius:20rpx;border:1rpx solid red;height:100rpx;line-height:100rpx;text-align:center;font-size:40rpx;" url="/pages/eat/index?src=https://tophub.today/">今日热榜</navigator>
-  <navigator style="float:left;margin:5rpx 10rpx;border-radius:20rpx;border:1rpx solid red;height:100rpx;line-height:100rpx;text-align:center;font-size:40rpx;" url="/pages/eat/index?src=http://koalastothemax.com/">切圆</navigator>
-  <navigator style="float:left;margin:5rpx 10rpx;border-radius:20rpx;border:1rpx solid red;height:100rpx;line-height:100rpx;text-align:center;font-size:40rpx;" url="/pages/eat/index?src=https://www.cbaigui.com/">知妖</navigator>
+<view style="position:fixed;top:0;left:0;z-index:2;width:100%">   
+  <van-row gutter="10" custom-class="c1">
+    <van-col span="8" custom-class="c1">
+      <van-button type="primary" custom-class="c2" span="8" bindtap="custonJump" data-url="/pages/demo/demo">demo.js</van-button>
+    </van-col>
+    <van-col span="8" custom-class="c1">
+      <van-button type="primary" custom-class="c2" span="8" bindtap="custonJump" data-url="/pages/eat/index?src=http://guozhivip.com/eat/">今天吃啥呀</van-button>
+    </van-col>
+    <van-col span="8" custom-class="c1">
+      <van-button type="primary" custom-class="c2" span="8" bindtap="custonJump" data-url="/pages/eat/index?src=https://www.zxgj.cn/g/zhougongjiemeng">周公解梦</van-button>
+    </van-col>
+
+  
+    <van-col span="8" custom-class="c1">
+      <van-button type="primary" custom-class="c2" span="8" bindtap="custonJump" data-url="/pages/eat/index?src=http://www.jsons.cn/agility/">反应测试</van-button>
+    </van-col>
+    <van-col span="8" custom-class="c1">
+      <van-button type="primary" custom-class="c2" span="8" bindtap="custonJump" data-url="/pages/eat/index?src=https://www.ip138.com/sanwei/">女性标准三围自测</van-button>
+    </van-col>
+    <van-col span="8" custom-class="c1">
+      <van-button type="primary" custom-class="c2" span="8" bindtap="custonJump" data-url="/pages/eat/index?src=https://www.52doutu.cn/">斗图</van-button>
+    </van-col>
+
+  
+    <van-col span="8" custom-class="c1">
+      <van-button type="primary" custom-class="c2" span="8" bindtap="custonJump" data-url="/pages/eat/index?src=https://cli.im/">二维码生成</van-button>
+    </van-col>
+    <van-col span="8" custom-class="c1">
+      <van-button type="primary" custom-class="c2" span="8" bindtap="custonJump" data-url="/pages/eat/index?src=http://guozhivip.com/mvs.html">追剧网址</van-button>
+    </van-col>
+    <van-col span="8" custom-class="c1">
+      <van-button type="primary" custom-class="c2" span="8" bindtap="custonJump" data-url="/pages/eat/index?src=http://guozhivip.com/lab/">有点意思</van-button>
+    </van-col>
+
+  
+    <van-col span="8" custom-class="c1">
+      <van-button type="primary" custom-class="c2" span="8" bindtap="custonJump" data-url="/pages/eat/index?src=https://fm.douban.com/">一首歌的时间</van-button>
+ 
+    </van-col>
+    <van-col span="8" custom-class="c1">
+      <van-button type="primary" custom-class="c2" span="8" bindtap="custonJump" data-url="/pages/eat/index?src=https://www.yikm.net/">小霸王</van-button>
+
+    </van-col>
+    <van-col span="8" custom-class="c1">
+      
+      <van-button type="primary" custom-class="c2" span="8" bindtap="custonJump" data-url="/pages/eat/index?src=https://www.allhistory.com/">全历史</van-button>
+
+    </van-col>
+
+  
+    <van-col span="8" custom-class="c1">
+      
+      <van-button type="primary" custom-class="c2" span="8" bindtap="custonJump" data-url="/pages/eat/index?src=https://tophub.today/">今日热榜</van-button>
+
+    </van-col>
+    <van-col span="8" custom-class="c1">
+      
+      <van-button type="primary" custom-class="c2" span="8" bindtap="custonJump" data-url="/pages/eat/index?src=http://koalastothemax.com/">切圆</van-button>
+
+    </van-col>
+    <van-col span="8" custom-class="c1">
+      
+      <van-button type="primary" custom-class="c2" span="8" bindtap="custonJump" data-url="/pages/eat/index?src=https://www.cbaigui.com/">知妖</van-button>
+
+    </van-col>
+  </van-row>
 </view>

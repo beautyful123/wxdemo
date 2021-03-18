@@ -1,0 +1,6 @@
+<van-tabbar active="{{ active }}" bind:change="onChange">
+  <van-tabbar-item icon="home-o" name="home" info='1'>首页</van-tabbar-item>
+  <van-tabbar-item icon="search" name="search" info="5">搜索</van-tabbar-item>
+  <van-tabbar-item icon="aim" name="special" info="10">专题</van-tabbar-item>
+  <van-tabbar-item icon="underway-o" name="history" dot>历史记录</van-tabbar-item>
+</van-tabbar>

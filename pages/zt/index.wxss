@@ -2,9 +2,25 @@
   position: fixed;
   width: 100vw;
   height: 100vh;
-  font-size:50rpx;
+  font-size:40rpx;
   color:#6ecdc7;
   line-height: 100vh;
   text-align: center;
   background: #f1f1f1;
+}
+.van-button .van-button--default .van-button--normal{
+  width: 100%!important;
+  box-sizing: border-box!important;
+}
+button{
+  box-sizing: border-box!important;
+  white-space: nowrap;
+}
+.c1{
+  /* margin: 10px 0; */
+  margin-top: 20rpx;
+}
+.c2{
+  width:100%;
+  box-sizing: border-box;
 }
