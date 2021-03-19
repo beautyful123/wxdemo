@@ -5,22 +5,27 @@ Page({
    * 页面的初始数据
    */
   data: {
-    active: 'home',
-    list: {
-      home: '/pages/home/index',
-      search: '/pages/search/index',
-      special: '/pages/zt/index',
-      history: '/pages/lsjl/lsju'
-    }
+    active: 0,
+    list: [
+      '/pages/home/index',
+      '/pages/search/index',
+      "",
+      '/pages/zt/index',
+      '/pages/lsjl/lsju'
+    ]
   },
   onChange(event) {
     // event.detail 的值为当前选中项的索引
     let detail = event.detail;
-    this.setData({ active: detail });
     let url = this.data.list[detail]
-    wx.switchTab({
-      url
-    })
+    if(detail === 2) {
+      this.openScanCode()
+    } else {
+      wx.switchTab({
+        url
+      })
+    };
+    this.setData({ active: detail });
     console.log(this.data.active)
     console.log(detail)
   },
@@ -37,7 +42,13 @@ Page({
   onReady: function () {
 
   },
-
+  openScanCode() {
+    wx.scanCode({
+      success(res) {
+        console.log(res)
+      }
+    })
+  },
   /**
    * 生命周期函数--监听页面显示
    */

@@ -1,6 +1,21 @@
 <van-tabbar active="{{ active }}" bind:change="onChange">
-  <van-tabbar-item icon="home-o" name="home" info='1'>首页</van-tabbar-item>
-  <van-tabbar-item icon="search" name="search" info="5">搜索</van-tabbar-item>
-  <van-tabbar-item icon="aim" name="special" info="10">专题</van-tabbar-item>
-  <van-tabbar-item icon="underway-o" name="history" dot>历史记录</van-tabbar-item>
+  <van-tabbar-item icon="home-o">首页</van-tabbar-item>
+  <image
+      slot="icon"
+      src="{{ icon.home-o }}"
+      mode="aspectFit"
+      style="width: 30px; height: 18px;"
+    />
+    <image
+      slot="icon-active"
+      src="{{ icon.active }}"
+      mode="aspectFit"
+      style="width: 30px; height: 18px;"
+    />
+  <van-tabbar-item icon="search">搜索</van-tabbar-item>
+  <van-tabbar-item icon="scan">
+    <text bindtap="openScanCode">扫码</text>
+  </van-tabbar-item>
+  <van-tabbar-item icon="aim" info="10">专题</van-tabbar-item>
+  <van-tabbar-item icon="underway-o" dot>历史记录</van-tabbar-item>
 </van-tabbar>
