@@ -1,17 +1,5 @@
 <van-tabbar active="{{ active }}" bind:change="onChange">
   <van-tabbar-item icon="home-o">首页</van-tabbar-item>
-  <image
-      slot="icon"
-      src="{{ icon.home-o }}"
-      mode="aspectFit"
-      style="width: 30px; height: 18px;"
-    />
-    <image
-      slot="icon-active"
-      src="{{ icon.active }}"
-      mode="aspectFit"
-      style="width: 30px; height: 18px;"
-    />
   <van-tabbar-item icon="search">搜索</van-tabbar-item>
   <van-tabbar-item icon="scan">
     <text bindtap="openScanCode">扫码</text>

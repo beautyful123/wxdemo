@@ -27,17 +27,11 @@
     }
   },
   "tabBar": {
-    "color": "#6e6e6e",
-    "selectedColor": "#6ecdc7",
-    "backgroundColor": "#fff",
-    "borderStyle": "white",
     "custom": true,
     "list": [
       {
         "pagePath": "pages/home/index",
-        "text": "首页",
-        "iconPath": "/image/index.png",
-        "selectedIconPath": "/image/index_sel.png"
+        "text": "首页"
       },
       {
         "pagePath": "pages/search/index",
